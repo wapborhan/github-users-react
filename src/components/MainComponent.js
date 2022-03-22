@@ -1,7 +1,14 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Body from "./pages/body/Body";
+import Footer from "./pages/footer/Footer";
+import Header from "./pages/header/Header";
 
 export default function MainComponent() {
   return (
-    <div className="mt-5 d-flex justify-content-center">MainComponent</div>
+    <Fragment>
+      <Header />
+      <Body />
+      <Footer />
+    </Fragment>
   );
 }
