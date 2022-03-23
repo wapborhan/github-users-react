@@ -48,7 +48,7 @@ export default class Body extends Component {
   searchRepos = () => {
     axios
       .get(
-        `http://api.github.com/users/${this.state.username}/repos?page=1&per_page=30&clientId=${clientID}&clientSecret=${clientSecret}`
+        `http://api.github.com/users/${this.state.username}/repos?page=1&per_page=100&clientId=${clientID}&clientSecret=${clientSecret}`
       )
       .then((res) => {
         this.setState({
@@ -71,7 +71,7 @@ export default class Body extends Component {
                 <h1>Search Github User's</h1>
               </div>
               <div className="col-lg-6">
-                <form className="form-inline" onSubmit={this.searchUser}>
+                <form className="form-inline w-100" onSubmit={this.searchUser}>
                   <input
                     onChange={this.updateInput}
                     value={this.state.username}
