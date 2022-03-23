@@ -32,7 +32,7 @@ export default class Body extends Component {
   searchProfile = () => {
     axios
       .get(
-        `http://api.github.com/users/${this.state.username}?clientId=${clientID}&clientSecret=${clientSecret}`
+        `https://api.github.com/users/${this.state.username}?clientId=${clientID}&clientSecret=${clientSecret}`
       )
       .then((res) => {
         this.setState({
@@ -48,7 +48,7 @@ export default class Body extends Component {
   searchRepos = () => {
     axios
       .get(
-        `http://api.github.com/users/${this.state.username}/repos?page=1&per_page=100&clientId=${clientID}&clientSecret=${clientSecret}`
+        `https://api.github.com/users/${this.state.username}/repos?page=1&per_page=100&clientId=${clientID}&clientSecret=${clientSecret}`
       )
       .then((res) => {
         this.setState({
