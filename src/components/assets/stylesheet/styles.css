@@ -6,12 +6,21 @@ a {
   text-decoration: none;
 }
 
+.sticky-top {
+  top: 10px !important;
+}
+
+
 #topbar {
   z-index: 99999;
 }
 
+#profile {
+  margin: 20px 0 100px 0;
+}
+
 .searchContainer {
-  padding: 140px 0 0 0;
+  padding: 40px 0 0 0;
 }
 
 #btn-back-to-top {
@@ -217,7 +226,7 @@ header {
 
 @media screen and (max-width: 1120px) {
   .searchContainer {
-    padding: 120px 0 0 0;
+    padding: 20px 0 0 0;
   }
 
   #res_logo {

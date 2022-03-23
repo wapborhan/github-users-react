@@ -2,3 +2,6 @@ Client ID
 90e5ccac8e18ab806fb7
 Client secrets
 7c4a7723f4f328ef186be7965c8a449fab0e76f5  
+
+
+http://api.github.com/users/wapborhan/repos?clientId=90e5ccac8e18ab806fb7&clientSecret=7c4a7723f4f328ef186be7965c8a449fab0e76f5

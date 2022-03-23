@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import Profile from "./Profile";
+import Repos from "./Repos";
+import axios from "axios";
+import { clientID, clientSecret } from "../../GithubCredintials";
 
 export default class Body extends Component {
   constructor(props) {
@@ -21,7 +24,42 @@ export default class Body extends Component {
   //Form Submit
   searchUser = (event) => {
     event.preventDefault();
+    this.searchProfile();
+    this.searchRepos();
   };
+
+  // Search a Profile
+  searchProfile = () => {
+    axios
+      .get(
+        `http://api.github.com/users/${this.state.username}?clientId=${clientID}&clientSecret=${clientSecret}`
+      )
+      .then((res) => {
+        this.setState({
+          profile: res.data,
+        });
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  };
+
+  // Search a Repos
+  searchRepos = () => {
+    axios
+      .get(
+        `http://api.github.com/users/${this.state.username}/repos?page=1&per_page=30&clientId=${clientID}&clientSecret=${clientSecret}`
+      )
+      .then((res) => {
+        this.setState({
+          repos: res.data,
+        });
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  };
+  // Pagination
 
   render() {
     return (
@@ -54,7 +92,18 @@ export default class Body extends Component {
           </div>
 
           <div id="profile">
-            <Profile />
+            <div className="card card-body mb-3">
+              <div className="row">
+                <div className="col-lg-3">
+                  {this.state.profile ? (
+                    <Profile profile={this.state.profile} />
+                  ) : null}
+                </div>
+                <div className="col-lg-9">
+                  {this.state.repos ? <Repos repos={this.state.repos} /> : null}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </main>

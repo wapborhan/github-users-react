@@ -3,69 +3,69 @@ import React from "react";
 export default function Header() {
   return (
     <header>
-      <div className="sr_header shadow">
-        <section>
-          <span className="sr_cross sr_parallelogram">
-            <img
-              src="https://wapborhan.com/assets/images/logo/logo-dark.png"
-              className="sr_logo skew-fix"
-              alt="WapBorhan"
-            />
-          </span>
-        </section>
-        <section>
-          <div className="top-tab">
-            <span>
-              <a href="tel:+8801620557840">
-                <i className="fa fa-phone"></i> (+88)-01620-557-840
-              </a>
-              <a href="emailto:borhaninfos@gmail.com">
-                <i className="fa fa-envelope"></i> borhaninfos@gmail.com
-              </a>
-            </span>
-            <span>
-              <a href="http://www.facebook.com/infoborhan">
-                <i className="fab fa-facebook"></i>
-              </a>
-              <a href="http://www.github.com/wapborhan">
-                <i className="fab fa-github"></i>
-              </a>
-              <a href="http://www.twitter.com/wapborhan">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="http://www.linkedin.com/in/wapborhan">
-                <i className="fab fa-linkedin"></i>
-              </a>
-              <a href="http://www.wapborhan.com/">
-                <i className="fas fa-globe-asia"></i>
-              </a>
-            </span>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div className="container">
+          <a className="navbar-brand" href="#">
+            WapBorhan
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav ms-auto">
+              <li className="nav-item active">
+                <a className="nav-link" href="#">
+                  Home <span className="sr-only">(current)</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Link
+                </a>
+              </li>
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a className="dropdown-item" href="#">
+                    Action
+                  </a>
+                  <a className="dropdown-item" href="#">
+                    Another action
+                  </a>
+                  <div className="dropdown-divider"></div>
+                  <a className="dropdown-item" href="#">
+                    Something else here
+                  </a>
+                </div>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link disabled" href="#">
+                  Disabled
+                </a>
+              </li>
+            </ul>
           </div>
-          <div className="sr_topnav" id="mysr_topnav">
-            <a href="#">
-              <img
-                src="https://wapborhan.com/assets/images/logo/logo-dark.png"
-                id="res_logo"
-              />
-            </a>
-            <a href="http://code.wapborhan.com" className="active">
-              Home
-            </a>
-            <a href="https://wapborhan.com/more/portfolio/index.html">
-              Portfolio
-            </a>
-            <a href="https://wapborhan.com/#contacts">Contact</a>
-            <a href="https://wapborhan.com/more/cv.html">About</a>
-            <a
-              style={{ fontSize: "15px" }}
-              className="icon"
-              // onClick={myFunction}
-            >
-              &#9776;
-            </a>
-          </div>
-        </section>
-      </div>
+        </div>
+      </nav>
     </header>
   );
 }
