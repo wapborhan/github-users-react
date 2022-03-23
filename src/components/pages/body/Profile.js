@@ -1,5 +1,6 @@
 import React from "react";
 import Repos from "./Repos";
+import dateFormat from "dateformat";
 
 export default function Profile(user) {
   const twitter = user.profile.twitter_username;
@@ -49,7 +50,7 @@ export default function Profile(user) {
         </li>
         <li className="list-group-item">Address: {user.profile.location}</li>
         <li className="list-group-item">
-          Member Since: {user.profile.created_at}
+          Member Since: {dateFormat(user.profile.created_at, "dS mmmm yyyy")}
         </li>
       </ul>
     </div>
