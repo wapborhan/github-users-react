@@ -71,7 +71,10 @@ export default class Body extends Component {
                 <h1>Search Github User's</h1>
               </div>
               <div className="col-lg-6">
-                <form className="form-inline w-100" onSubmit={this.searchUser}>
+                <form
+                  className="form-inline w-100 d-flex"
+                  onSubmit={this.searchUser}
+                >
                   <input
                     onChange={this.updateInput}
                     value={this.state.username}
