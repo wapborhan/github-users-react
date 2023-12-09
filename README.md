@@ -1,33 +1,53 @@
-# Github User Finder
 
-This project was bootstrapped with React
+<h3 align="center"> Github User Finder</h3>
 
-## Available Scripts
+### Live Link
 
-In the project directory, you can run:
+[https://code.wapborhan.com/github-users-react](https://code.wapborhan.com/github-users-react)
 
-### `npm start`
+### Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Type Github Username and get data by Github API.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+###  Preview
+![enter image description here](https://c8.alamy.com/comp/2H2YHD7/dasd-concept-with-computer-motherboard-dasd-text-written-on-technology-motherboard-digital-technology-background-dasd-with-printed-circuit-board-and-2H2YHD7.jpg)
 
-### `npm test`
+### Built with
 
-Launches the test runner in the interactive watch mode.\
+- ReactJS
+- Github API
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installing
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run the Brand Shop project on your local machine, you need to have the following software installed:
 
-### `npm run eject`
+- Nodejs
+- Code Editor any (VS code recommended)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Steps
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository to your local machine:
+
+```bash
+  git clone https://github.com/wapborhan/github-users-react.git
+```
+
+You can do this by running the following command from the project directory:
+
+```bash
+   npm install
+```
+
+```bash
+   npm start
+```
+
+Note: Need server site for run proper
+
+### Features
+
+- **Search User**: Fetch Github User Data by Using Username
+- **Repo**: Show Repositories.
+
+
