@@ -10,7 +10,7 @@
 Type Github Username and get data by Github API.
 
 ###  Preview
-![enter image description here](https://c8.alamy.com/comp/2H2YHD7/dasd-concept-with-computer-motherboard-dasd-text-written-on-technology-motherboard-digital-technology-background-dasd-with-printed-circuit-board-and-2H2YHD7.jpg)
+![enter image description here](https://raw.githubusercontent.com/wapborhan/github-users-react/main/src/assets/Screenshot.png)
 
 ### Built with
 
